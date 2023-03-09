@@ -5,6 +5,8 @@
 :root {
     --primary-color: #0f1b4c;
     --bg-header: #e6f0ff;
+    --width-content: 1110px;
+    --spacer-content: 48px;
 }
 
 html {
@@ -18,8 +20,8 @@ body {
 
 /* Common */
 .content {
-    width: 1110px;
-    max-width: calc(100% - 48px);
+    width: var(--width-content);
+    max-width: calc(100% - var(--spacer-content));
     margin-right: auto;
     margin-left: auto;
 }
@@ -51,6 +53,7 @@ a {
 /* Header */
 
 .header {
+    position: relative;
     height: 100vh;
     background-color: var(--bg-header);
 }
@@ -133,4 +136,11 @@ a {
 .hero-cta {
     min-width: 170px;
     margin-top: 40px;
+}
+
+.hero .hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - var(--width-content)) / 2 - 100px);
+    width: 550px;
 }
