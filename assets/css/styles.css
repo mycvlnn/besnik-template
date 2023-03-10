@@ -7,6 +7,7 @@
     --bg-header: #e6f0ff;
     --width-content: 1110px;
     --spacer-content: 48px;
+    --link-color: #0689ff;
 }
 
 html {
@@ -34,7 +35,7 @@ a {
     display: inline-block;
     min-width: 98px;
     background: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -48,6 +49,7 @@ a {
 
 .btn.normal {
     padding: 13px 16px;
+    border-radius: 8px;
 }
 
 /* Header */
@@ -179,4 +181,90 @@ a {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 20px;
+}
+
+/* ================ Guides ================*/
+
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    --title-color: #000339;
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.guides .sub-title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 41px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 12px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    text-align: center;
+    color: #5a6473;
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.guides .list-guide {
+    display: flex;
+    list-style: none;
+    margin-top: 62px;
+    justify-content: center;
+}
+
+.guides .list-guide .guide-item {
+    text-align: center;
+    margin: 0 70px;
+}
+
+.guide-item .title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #3b3c45;
+    margin-top: 26px;
+}
+
+.guide-item .link {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--link-color);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.guide-item .link img {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.guide-cta {
+    margin-top: 64px;
+    display: flex;
+}
+
+.guide-cta .btn-guideline {
+    margin: auto;
+    min-width: 170px;
 }
