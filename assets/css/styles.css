@@ -20,6 +20,14 @@ body {
 }
 
 /* Common */
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .content {
     width: var(--width-content);
     max-width: calc(100% - var(--spacer-content));
@@ -267,4 +275,109 @@ a {
 .guide-cta .btn-guideline {
     margin: auto;
     min-width: 170px;
+}
+
+/* ================ Featured ================*/
+
+.featured {
+    background: #f5fafe;
+    margin-top: 120px;
+    padding: 110px 0;
+}
+
+.featured .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #000339;
+    margin-bottom: 15px;
+}
+
+.featured .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.featured .link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--link-color);
+}
+
+.featured .link .arrow {
+    margin-left: 8px;
+}
+
+.featured .list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 68px;
+}
+
+.featured .item {
+    --radius: 12px;
+    flex: 1;
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+    border-radius: var(--radius);
+}
+
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.featured .item .body {
+    padding: 17px 20px 24px;
+}
+
+.featured .item .title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000339;
+}
+
+.featured .item .desc {
+    --line-clamp: 3;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #a3a6ab;
+    word-break: break-all;
+}
+
+.featured .info-list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured .info-item {
+    display: flex;
+    align-items: center;
+}
+
+.featured .info-item span {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #444444;
 }
