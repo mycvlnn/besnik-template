@@ -483,7 +483,7 @@ a {
 
 .stats-trend .divided {
     margin-top: 25px;
-    height: 1px;
+    height: 1.2px;
     background: #e9e9e9;
 }
 
@@ -513,6 +513,10 @@ a {
     text-align: center;
     line-height: 16px;
     letter-spacing: -0.02em;
+}
+
+.user-block .user-group .user:first-child {
+    margin-left: 0;
 }
 
 .stats .digital-data {
