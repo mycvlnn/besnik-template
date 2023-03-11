@@ -514,3 +514,23 @@ a {
     line-height: 16px;
     letter-spacing: -0.02em;
 }
+
+.stats .digital-data {
+    margin-top: 110px;
+    padding: 0 32px;
+    justify-content: space-between;
+}
+
+.stats .qty-number {
+    font-weight: 600;
+    font-size: 6.4rem;
+    color: #000000;
+}
+
+.stats .qty-desc {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #7b8087;
+}
