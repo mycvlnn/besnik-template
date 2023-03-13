@@ -8,6 +8,7 @@
     --width-content: 1110px;
     --spacer-content: 48px;
     --link-color: #0689ff;
+    --lato-font: Lato, sans-serif;
 }
 
 html {
@@ -599,6 +600,7 @@ a {
     margin-top: 55px;
     padding: 50px 0 58px;
 }
+
 .footer .row {
     display: flex;
 }
@@ -613,10 +615,11 @@ a {
 }
 
 .footer .heading {
-    font-weight: 600;
+    font-family: var(--lato-font);
+    color: #1c1c1d;
+    font-weight: 700;
     font-size: 2rem;
     line-height: 1.2;
-    color: #1c1c1d;
     margin-bottom: 40px;
 }
 
