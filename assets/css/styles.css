@@ -8,7 +8,13 @@
     --width-content: 1110px;
     --spacer-content: 48px;
     --link-color: #0689ff;
+    --height-header: 82px;
     --lato-font: Lato, sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 html {
@@ -62,17 +68,19 @@ a {
 }
 
 /* Header */
-
-.header {
-    position: relative;
-    height: 100vh;
+.header-fixed {
+    height: var(--height-header);
+    padding-top: 26px;
     background-color: var(--bg-header);
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 
-.navbar {
+.header-fixed .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 8px 0;
 }
 
 .navbar ul {
@@ -113,7 +121,11 @@ a {
 /* ================ Header hero ================*/
 
 .hero {
-    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - var(--height-header));
+    background-color: var(--bg-header);
 }
 
 .hero .info {
@@ -184,6 +196,18 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.clients .images a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0px 40px;
+    border-radius: 12px;
+}
+
+.clients .images a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .clients .images .active {
